@@ -10,16 +10,16 @@ new Promise(() => {
 new Promise((resolve) => {
    console.log(5);
    resolve(6);
-}).then(r => console.log(r));
+}).then(r => console.log(r));               //6이 저장
 
 new Promise((resolve) => {
     console.log(7);
     resolve(8);
-}).then(r => console.log(r));
+}).then(r => console.log(r));               //8이 저장
 
 new Promise((resolve) => {
     console.log(9);
-    resolve(10);        //호출은하되 실행은 값은 덴으로 주고 실행은 덴에서
+    resolve(10);        //호출은하되 실행은 값은 덴으로 주고 실행은 덴에서 10저장
 }).then(r => {
     console.log(r);
     return 11;
@@ -27,7 +27,7 @@ new Promise((resolve) => {
 
 new Promise((resolve) => {
     console.log(12);
-    resolve(13);
+    resolve(13);                //13저장
 }).then(r => console.log(r));
 
 new Promise((resolve) => {
